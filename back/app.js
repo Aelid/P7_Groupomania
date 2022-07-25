@@ -7,7 +7,7 @@ const userRoutes = require("./routes/user");
 
 mongoose
   .connect(
-    "mongodb+srv://Aelid:*******@cluster0.x1h4xr0.mongodb.net/Groupomania",
+    "mongodb+srv://Aelid:YYOP9fTBNdZbk7HV@cluster0.x1h4xr0.mongodb.net/Groupomania",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
