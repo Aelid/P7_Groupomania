@@ -3,7 +3,7 @@
     <div class="card h-100">
       <div class="card-link" @click="getOneArticle">
           <img v-if="post.imageUrl !== undefined" class="card-img-top" :src="post.imageUrl" :alt="post.title" width="100%" height="300px"/>
-          <img v-else class="card-img-top" src="@/./public/Images/No_image_available.jpg" alt="Pas d'image" />
+          <img v-else class="card-img-top" src="@/../public/Images/No_image_available.jpg" alt="Pas d'image" />
       </div>
       <div class="card-body">
         <div class="card-link" @click="getOneArticle">
