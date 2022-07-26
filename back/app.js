@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-
+require('dotenv').config({path: './.env'});
 const articlesRoutes = require("./routes/articles");
 const userRoutes = require("./routes/user");
 
 mongoose
   .connect(
-    "mongodb+srv://Aelid:YYOP9fTBNdZbk7HV@cluster0.x1h4xr0.mongodb.net/Groupomania",
+    "mongodb+srv://" + process.env.DB_USER_PASS + "@cluster0.x1h4xr0.mongodb.net/Groupomania",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
