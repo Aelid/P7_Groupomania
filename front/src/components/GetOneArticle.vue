@@ -3,7 +3,7 @@
     <div class="col">
       <div class="card">
         <img v-if="imageUrl !== null" class="card-img-top" :src="imageUrl" :alt="title" />
-        <img v-else class="card-img-top" src="@/./public/Images/No_image_available.jpg" alt="Pas d'image" />
+        <img v-else class="card-img-top" src="@/../public/Images/No_image_available.jpg" alt="Pas d'image" />
         <div class="card-body">
           <h5 class="card-title">{{ title }}</h5>
           <p class="card-text">{{ desc }}</p>
